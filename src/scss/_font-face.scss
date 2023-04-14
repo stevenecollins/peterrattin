@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap");
+
+// Source Sans Pro
+// Light
+%sans-pro-lite {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 100;
+}
+// Regular
+%sans-pro {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+}
+// Bold
+%sans-pro-bold {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+}
+// Black
+%sans-pro-black {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 900;
+}
+
+// Merriweather
+// Regular
+%serif {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+}
+// Bold
+%serif-bold {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+}
+
+// Roboto
+// Light
+%roboto-lite {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+// Bold
+%roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}

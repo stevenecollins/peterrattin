@@ -1,8 +1,27 @@
-<footer class="">
-	<div class="container footer-wrapper">
-		<a href="/">Home</a> | <a href="/page">Page</a>
-		<div class="copyright">
-			<p><span>©</span> {% year %} Company Name, LLC</p>
+<footer class="footer-wrapper">
+	<section>
+		<div class="social-media">
+			<a href="/">
+				<img src="./../assets/instagram.svg" aria-label="Instagram" />
+			</a>
+			<a href="/">
+				<img src="./../assets/linkedin.svg" aria-label="Linkedin" />
+			</a>
+			<a href="/">
+				<img src="./../assets/square-facebook.svg" aria-label="Facebook" />
+			</a>
 		</div>
-	</div>
+		<p class="tagline">
+			Made with great care in the chilling depths of my apartment in Chicago.
+		</p>
+		<p class="copyright">{% year %} <span>©</span> Peter Rattin</p>
+	</section>
+	<section>
+		<nav class="footer-nav">
+			<a href="/about">About</a>
+			<a href="/portfolio">Portfolio</a>
+			<a href="/resume">Resume</a>
+			<a href="/contact">Contact</a>
+		</nav>
+	</section>
 </footer>

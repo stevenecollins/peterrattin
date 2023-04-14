@@ -1,5 +1,18 @@
-// COLORS //
-$color: #000;
-$color2: #fafafa;
+// Colors
+$color-black: hsl(0 0% 0%);
+$color-black-50: hsl(0 0% 0% / 50%);
+
+$color-white: hsl(0 0% 100%);
+
+$color-blue: hsl(207 97% 24%);
+$color-blue-dark: hsl(207 97% 13%);
+$color-blue-lite: hsl(211 49% 51%);
+
+$color-blue-dark-90: hsl(207 97% 13% / 90%);
+$color-blue-dark-50: hsl(207 97% 13% / 50%);
+$color-blue-dark-20: hsl(207 97% 13% / 20%);
+
+$color-gray: #979797;
+$placeholder-gray: #9d9d9d;
 
 // BREAKPOINTS //

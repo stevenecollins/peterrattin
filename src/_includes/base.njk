@@ -6,11 +6,12 @@
 		<title>{{ title }}</title>
 		<link rel="stylesheet" href="{{ '/scss/styles.css' | url }}" />
 	</head>
-	<body>
+	<body id="{{ pageId }}">
 		{% include 'header.njk' %}
 		<main>
 			{{ content | safe }}
 		</main>
 		{% include 'footer.njk' %}
+		<script src="{{ './js/index.js' | url }}"></script>
 	</body>
 </html>
