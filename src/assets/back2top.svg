@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="86px" height="86px" viewBox="0 0 86 86" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 47</title>
+    <g id="Portfolio-V4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Invoice-Worksheets-Project-Page" transform="translate(-1155.000000, -11642.000000)">
+            <g id="Group-47" transform="translate(1156.000000, 11643.000000)">
+                <circle id="Oval" stroke="#4680BF" stroke-width="2" fill="#24476D" cx="42" cy="42" r="42"></circle>
+                <line x1="19.5" y1="43.5" x2="42.5" y2="14.5" id="Line-2" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"></line>
+                <line x1="42.5" y1="43.5" x2="65.5" y2="14.5" id="Line-2-Copy-2" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" transform="translate(54.000000, 29.000000) scale(-1, 1) translate(-54.000000, -29.000000) "></line>
+                <text id="Top" font-family="SourceSansPro-Bold, Source Sans Pro" font-size="16" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="27.98" y="64">TOP</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

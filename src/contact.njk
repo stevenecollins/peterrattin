@@ -1,0 +1,45 @@
+---
+layout: base.njk
+permalink: "contact.html"
+title: Contact Peter Rattin
+pageId: contact
+---
+
+<div class="container">
+	<div>
+		<h1>Contact Me</h1>
+		<p>
+			Want to get in touch? Send me a message. I’d love to talk shop, answer any
+			questions or speak about future employment opportunities.
+		</p>
+		<form class="submission-form" action="" method="">
+			<label for="name">Name*</label>
+			<input
+				type="text"
+				id="name"
+				name="user_name"
+				placeholder="Your name here..."
+			/>
+
+			<label for="email">Email Address*</label>
+			<input
+				type="email"
+				id="mail"
+				name="user_email"
+				placeholder="Your email address here…"
+			/>
+
+			<label for="message">Message*</label>
+			<div class="grow-wrap">
+				<textarea
+					onInput="this.parentNode.dataset.replicatedValue = this.value"
+					id="message"
+					name="user_message"
+					placeholder="Your message…"
+				></textarea>
+			</div>
+			<button class="buttons" type="submit">Submit</button>
+		</form>
+	</div>
+	<img src="./../assets/contact-image.png" alt="" />
+</div>
