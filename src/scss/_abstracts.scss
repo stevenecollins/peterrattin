@@ -7,6 +7,9 @@ $color-white: hsl(0 0% 100%);
 $color-blue: hsl(207 97% 24%);
 $color-blue-dark: hsl(207 97% 13%);
 $color-blue-lite: hsl(211 49% 51%);
+$color-bg-blue: #d6eef8;
+$color-bg-green: #ecf7dc;
+$color-bg-orange: #ffeee3;
 
 $color-blue-dark-90: hsl(207 97% 13% / 90%);
 $color-blue-dark-50: hsl(207 97% 13% / 50%);
@@ -16,3 +19,7 @@ $color-gray: #979797;
 $placeholder-gray: #9d9d9d;
 
 // BREAKPOINTS //
+$breakpoints: (
+	small: 40em,
+	medium: 65em,
+);

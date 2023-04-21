@@ -1,3 +1,122 @@
 @use "abstracts" as *;
+@use "font-face" as *;
 
 // GENERAL STYLES //
+
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+	padding-left: 96px;
+	padding-right: 96px;
+
+	@media (max-width: 1024px) {
+		padding-left: 64px;
+		padding-right: 64px;
+	}
+
+	@media (max-width: 767px) {
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+}
+
+main .container {
+	margin-top: 100px;
+	@media (min-width: 768px) {
+		margin-top: 152px;
+	}
+}
+
+// END GENERAL //
+
+// FOOTER //
+
+.footer-wrapper {
+	width: 100%;
+	margin-top: 32px;
+	background-color: $color-blue;
+	border-top: 10px solid $color-blue-dark;
+	color: $color-white;
+	padding: 22px 0px;
+	position: sticky;
+	top: 100%;
+	.container {
+		display: grid;
+		grid-template-columns: repeat(1, auto);
+		gap: 8px;
+		@media (min-width: 768px) {
+			grid-template-columns: repeat(2, auto);
+			gap: 32px;
+		}
+		.footer-nav {
+			display: grid;
+			grid-template-columns: repeat(4, auto);
+			text-align: center;
+			gap: 10px;
+			margin-top: 5px;
+			@media (min-width: 768px) {
+				grid-template-columns: repeat(1, auto);
+				text-align: right;
+				margin-top: inherit;
+			}
+			a {
+				color: $color-white;
+				font-size: 1em;
+				text-decoration: none;
+				text-transform: uppercase;
+				opacity: 80%;
+			}
+			a:hover {
+				text-decoration: underline;
+				opacity: 100%;
+			}
+		}
+		.social-media {
+			display: flex;
+			justify-content: center;
+			margin-bottom: 20px;
+			@media (min-width: 769px) {
+				justify-content: start;
+				margin-bottom: 10px;
+			}
+			a {
+				padding: 10px;
+				opacity: 80%;
+			}
+			a:hover {
+				opacity: 100%;
+				transform: scale(110%);
+			}
+		}
+		.tagline {
+			font-size: 14px;
+			text-align: center;
+			margin-bottom: 10px;
+			@media (min-width: 768px) {
+				text-align: left;
+				margin-bottom: initial;
+			}
+		}
+		.copyright {
+			font-size: 12px;
+			text-align: center;
+			margin-bottom: 5px;
+			@media (min-width: 769px) {
+				text-align: left;
+				margin-bottom: initial;
+			}
+		}
+		p {
+			padding: inherit;
+		}
+	}
+}
+
+// END FOOTER //

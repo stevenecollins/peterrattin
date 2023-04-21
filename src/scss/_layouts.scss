@@ -1,6 +1,302 @@
 @use "abstracts" as *;
 @use "base" as *;
+@use "font-face" as *;
 
 // HOME //
+#home {
+	main .container {
+		@keyframes cursor-blink {
+			0% {
+				opacity: 0;
+			}
+		}
+		span.cursor:after {
+			content: "";
+			width: 4px;
+			height: 40px;
+			margin-bottom: -10px;
+			background: $color-blue-lite;
+			display: inline-block;
+			animation: cursor-blink 1.5s steps(2) infinite;
+			@media (min-width: 769px) {
+				height: 54px;
+			}
+		}
+		display: grid;
+		grid-template-columns: repeat(1, auto);
+		column-gap: 0px;
+		@media (min-width: 769px) {
+			// Anything larger then 768px
+			grid-template-columns: repeat(1, 600px auto);
+		}
+		@media (min-width: 1241px) {
+			padding-left: 160px;
+			padding-right: 160px;
+		}
 
-// ANOTHER PAGE //
+		h3 {
+			margin-bottom: 30px;
+		}
+		.peterPortrait {
+			display: none;
+			width: 100%;
+			max-width: 500px;
+			transition: 500ms;
+			transform: scale(1) rotate(0deg);
+			@media (min-width: 769px) {
+				display: block;
+			}
+		}
+		.peterPortrait:hover {
+			transform: scale(1) rotate(10deg);
+			transition: 500ms;
+			cursor: pointer;
+		}
+		.peterPortraitMobile {
+			width: 100%;
+			max-width: 300px;
+			margin: 0px auto 15px;
+			transition: 500ms;
+			@media (min-width: 769px) {
+				display: none;
+			}
+		}
+		.peterPortraitMobile:hover {
+			transform: scale(1.1) rotate(15deg);
+			transition: 500ms;
+			cursor: pointer;
+		}
+		.button-container {
+			display: flex;
+			.button-item {
+				width: 100%;
+				background-color: $color-blue;
+				border: 0px;
+				border-radius: 8px;
+				color: $color-white;
+				padding: 15px 0px;
+				font-size: 20px;
+				color: white;
+				font-weight: bold;
+				text-align: center;
+				box-shadow: 2px 2px 4px 2px $color-black-50;
+				@media (min-width: 769px) {
+					padding: 20px 0px;
+					font-size: 20px;
+				}
+			}
+			.outline {
+				background-color: $color-white;
+				color: $color-blue-dark;
+			}
+			.spacer {
+				width: 40px;
+			}
+			a {
+				@extend %sans-pro-bold;
+				text-decoration: none;
+			}
+			a:hover {
+				background-color: $color-blue-dark;
+				color: $color-white;
+			}
+		}
+	}
+}
+// HOME END //
+
+// ABOUT //
+#about {
+	main .container {
+		display: grid;
+		grid-template-columns: auto 415px;
+		column-gap: 30px;
+		@media (min-width: 1241px) {
+			padding-left: 160px;
+			padding-right: 160px;
+			column-gap: 60px;
+		}
+
+		@media (max-width: 1024px) {
+			grid-template-columns: repeat(2, auto);
+		}
+
+		@media (max-width: 767px) {
+			grid-template-columns: repeat(1, auto);
+			column-gap: 0px;
+		}
+		img {
+			border-radius: 3px;
+		}
+	}
+}
+// ABOUT END //
+
+// CONTACT //
+#contact {
+	main .container {
+		display: grid;
+		grid-template-columns: auto 415px;
+		column-gap: 30px;
+		@media (min-width: 1241px) {
+			padding-left: 160px;
+			padding-right: 160px;
+			column-gap: 60px;
+		}
+		@media (max-width: 1024px) {
+			grid-template-columns: repeat(2, auto);
+		}
+		@media (max-width: 767px) {
+			grid-template-columns: repeat(1, auto);
+			column-gap: 0px;
+		}
+		img {
+			display: none;
+			border-radius: 3px;
+			@media (min-width: 767px) {
+				display: block;
+			}
+		}
+		.grow-wrap {
+			display: grid;
+		}
+		.grow-wrap::after {
+			content: attr(data-replicated-value) " ";
+			white-space: pre-wrap;
+			/* Hidden from view, clicks, and screen readers */
+			visibility: hidden;
+		}
+		.grow-wrap > textarea {
+			/* You could leave this, but after a user resizes, then it ruins the auto sizing */
+			resize: none;
+			/* Firefox shows scrollbar on growth, you can hide like this. */
+			overflow: hidden;
+		}
+		.grow-wrap > textarea,
+		.grow-wrap::after {
+			/* Identical styling required!! */
+			border: 1px solid $color-gray;
+			border-radius: 2px;
+			padding: 0.5rem 0.75rem;
+			margin-top: 5px;
+			margin-bottom: 1em;
+
+			/* Place on top of each other */
+			grid-area: 1 / 1 / 2 / 2;
+		}
+		.submission-form {
+			input {
+				display: block;
+				width: 100%;
+				border: 1px solid $color-gray;
+				border-radius: 2px;
+				padding: 0.5rem 0.75rem;
+				margin-top: 5px;
+				margin-bottom: 1em;
+			}
+			textarea {
+				min-height: 120px;
+				resize: none;
+			}
+			button {
+				max-width: 220px;
+			}
+			button:hover {
+				background-color: $color-blue-dark;
+				color: $color-white;
+			}
+		}
+	}
+}
+// CONTACT END
+
+// PORTFOLIO
+#portfolio {
+	@media (min-width: 1140px) {
+		.titleGrp {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-bottom: 60px;
+			h1 {
+				flex-grow: 1;
+				flex-basis: 300px;
+				margin: 0px 60px 0px 60px;
+			}
+			.subheader {
+				flex-grow: 2;
+				flex-basis: 600px;
+				padding: 15px 0px 15px 20px;
+				border-left: solid 1px $color-black;
+				justify-content: center;
+				margin-right: 60px;
+			}
+		}
+	}
+	@media (max-width: 768px) {
+		.titleGrp {
+			.subheader {
+				line-height: 32px;
+			}
+		}
+	}
+}
+
+// PORTFOLIO GROUP
+.container.portfolioGrp {
+	margin-top: 0px;
+	display: flex;
+	flex-direction: column;
+	.portfolioItem {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0px 0px 30px;
+		box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+		@media (min-width: 768px) {
+			box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+				rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+			margin: 0px 0px 45px;
+		}
+		.portfolioItemImg {
+			flex: 1 1 0;
+			min-width: 0;
+		}
+		.portfolioItemText {
+			padding: 30px;
+			@extend %sans-pro-bold;
+			font-size: 24px;
+			@media (min-width: 769px) {
+				padding: 40px;
+				font-size: 32px;
+			}
+			@media (min-width: 1140px) {
+				padding: 60px;
+				font-size: 45px;
+			}
+		}
+	}
+	a {
+		text-align: center;
+		text-decoration: none;
+		color: $color-black;
+		&:hover,
+		&:focus {
+		}
+	}
+
+	.portfolioItem.blue {
+		background-color: $color-bg-blue;
+		border: solid 4px $color-bg-blue;
+	}
+	.portfolioItem.green {
+		background-color: $color-bg-green;
+		border: solid 4px $color-bg-green;
+	}
+	.portfolioItem.orange {
+		background-color: $color-bg-orange;
+		border: solid 4px $color-bg-orange;
+	}
+}
+
+// END PORTFOLIO GROUP

@@ -21,3 +21,110 @@ header {
 		}
 	}
 }
+
+h1 {
+	font-size: 45px;
+	@extend %sans-pro-bold;
+}
+
+h3 {
+	@extend %serif;
+	@media (min-width: 769px) {
+		font-size: 1.25rem;
+		line-height: 36px;
+	}
+}
+
+p {
+	@extend %serif;
+	font-size: 1em;
+	@media (min-width: 769px) {
+		font-size: 1.1em;
+		line-height: 36px;
+	}
+	padding-bottom: 30px;
+	a {
+		color: $color-blue-lite;
+	}
+	a:hover {
+		color: $color-blue;
+	}
+}
+
+// NAV
+nav {
+	@extend %sans-pro;
+	a {
+		font-size: 20px;
+	}
+}
+
+// Helper Class
+.bold {
+	font-weight: bold;
+}
+
+// Contact Form
+label,
+input,
+textarea {
+	@extend %serif;
+	font-size: 1.1em;
+}
+input::placeholder,
+textarea::placeholder {
+	font-family: "Merriweather", serif;
+	font-weight: 300;
+	color: $color-gray;
+	font-size: 1.1em;
+}
+textarea {
+	line-height: 32px;
+}
+button {
+	@extend %sans-pro-bold;
+	letter-spacing: 0.5px;
+	font-size: 1.1rem;
+	text-align: center;
+}
+
+// Text Styles for homepage
+.effect-wrapper {
+	margin-top: 20px;
+	margin-bottom: 30px;
+	text-align: center;
+	@media (min-width: 769px) {
+		text-align: left;
+		margin-bottom: 50px;
+		margin-top: 50px;
+	}
+	h1 {
+		@extend %sans-pro-lite;
+		font-size: 24px;
+		line-height: 32px;
+		@media (min-width: 769px) {
+			line-height: 50px;
+			font-size: 44px;
+		}
+		.name {
+			@extend %sans-pro-bold;
+			font-size: 38px;
+			line-height: 46px;
+			@media (min-width: 769px) {
+				font-size: 54px;
+				line-height: 68px;
+			}
+		}
+		.roleTitle {
+			color: $color-blue;
+			font-size: 38px;
+			line-height: 46px;
+			@extend %sans-pro-black;
+			@media (min-width: 769px) {
+				color: $color-blue;
+				font-size: 54;
+				line-height: 68px;
+			}
+		}
+	}
+}
