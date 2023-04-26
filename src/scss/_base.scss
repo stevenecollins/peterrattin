@@ -9,7 +9,8 @@ body {
 	flex-direction: column;
 }
 
-.container {
+.container,
+.footer {
 	width: 100%;
 	max-width: 1440px;
 	margin: 0 auto;
@@ -47,7 +48,7 @@ main .container {
 	padding: 22px 0px;
 	position: sticky;
 	top: 100%;
-	.container {
+	.footer {
 		display: grid;
 		grid-template-columns: repeat(1, auto);
 		gap: 8px;
