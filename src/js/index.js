@@ -61,6 +61,11 @@ window.onload = function () {
 	});
 }
 
+window.addEventListener('.scrollButton');
+
+
+window.addEventListener('scroll', debounce(checkPosition));
+
 function scrollToTop() {
 	window.scroll({ top: 0, left: 0, behavior: "smooth" });
 }
