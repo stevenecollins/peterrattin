@@ -12,12 +12,16 @@ pageId: contact
 			Want to get in touch? Send me a message. I’d love to talk shop, answer any
 			questions or speak about future employment opportunities.
 		</p>
-		<form class="submission-form" action="" method="">
+		<form
+			class="submission-form"
+			action="https://formsubmit.co/iamstevenecollins@gmail.com"
+			method="POST"
+		>
 			<label for="name">Name*</label>
 			<input
 				type="text"
 				id="name"
-				name="user_name"
+				name="name"
 				placeholder="Your name here..."
 			/>
 
@@ -25,7 +29,7 @@ pageId: contact
 			<input
 				type="email"
 				id="mail"
-				name="user_email"
+				name="email"
 				placeholder="Your email address here…"
 			/>
 
@@ -34,12 +38,12 @@ pageId: contact
 				<textarea
 					onInput="this.parentNode.dataset.replicatedValue = this.value"
 					id="message"
-					name="user_message"
+					name="message"
 					placeholder="Your message…"
 				></textarea>
 			</div>
 			<button class="buttons" type="submit">Submit</button>
 		</form>
 	</div>
-	<img src="./../assets/contact-image.png" alt="" />
+	<img src="./assets/contact-image.png" alt="" />
 </div>
