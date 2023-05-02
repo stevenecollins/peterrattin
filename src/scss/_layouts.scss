@@ -302,12 +302,48 @@
 // END PORTFOLIO GROUP
 
 // INDIVIDUAL PORTFOLIO STYLES
+
+.heroImg {
+	margin-top: 80px;
+	height: 300px; /* set the height of the container */
+	@media (max-width: 767px) {
+		height: 150px;
+	}
+	display: flex; /* use flexbox to center the image vertically */
+	justify-content: center; /* center the content horizontally */
+	align-items: center; /* center the content vertically */
+	overflow: hidden; /* hide any overflow beyond the container */
+}
+
+.heroImg img {
+	max-width: 100%; /* set the image width to be responsive */
+	height: auto; /* ensure the aspect ratio is maintained */
+}
+
+.container.titleGrp {
+	margin: 60px auto;
+	text-align: center;
+	@media (max-width: 769px) {
+		margin: 30px auto;
+	}
+	h3 {
+		@extend %sans-pro-bold;
+		font-size: 32px;
+		border-bottom: solid 20px;
+		padding-bottom: 20px;
+	}
+}
+
+.container.titleGrp h3 {
+	border-color: $color-blue;
+}
+
 #portfolioIW {
 	.portfolio-container {
 		margin: 0px auto;
 		display: flex;
 		gap: 30px;
-		@media (max-width: 767px) {
+		@media (max-width: 769px) {
 			flex-direction: column;
 		}
 		img {
@@ -317,9 +353,13 @@
 	.intro {
 		gap: 100px;
 		margin: 60px auto;
+		@media (max-width: 769px) {
+			margin: 30px auto;
+		}
 		justify-content: center;
 		@media (max-width: 767px) {
 			flex-direction: column;
+			gap: inherit;
 		}
 		h1 {
 			margin-top: 0px;
@@ -328,6 +368,7 @@
 
 			@media (max-width: 767px) {
 				max-width: 100%;
+				font-size: 36px;
 				line-height: 42px;
 			}
 
@@ -337,9 +378,10 @@
 			font-size: 20px;
 			line-height: 38px;
 			max-width: 500px;
-			@media (max-width: 767px) {
+			@media (max-width: 769px) {
 				max-width: 100%;
-				line-height: 24px;
+				font-size: 18px;
+				line-height: 28px;
 			}
 		}
 	}
@@ -348,7 +390,7 @@
 		align-items: center;
 		gap: 60px;
 		margin: 60px auto;
-		@media (max-width: 767px) {
+		@media (max-width: 769px) {
 			flex-direction: column;
 		}
 		h3 {
@@ -358,7 +400,7 @@
 			width: 300px;
 			line-height: inherit;
 
-			@media (max-width: 767px) {
+			@media (max-width: 769px) {
 				max-width: 100%;
 			}
 			margin-right: 30px;
@@ -370,7 +412,7 @@
 			border-left: solid 2px;
 			padding: 15px 0px 15px;
 			padding-left: 20px;
-			@media (max-width: 767px) {
+			@media (max-width: 769px) {
 				max-width: 100%;
 				line-height: 24px;
 			}
@@ -424,7 +466,7 @@
 		}
 	}
 	.designProcess h3 {
-		border-color: $color-blue;
+		// border-color: $color-blue;
 	}
 	p.listItem strong {
 		font-weight: bold;
