@@ -212,12 +212,21 @@
 
 // PORTFOLIO
 #portfolio {
+	.titleGrp {
+		margin-top: 120px;
+		margin-bottom: 0px;
+		.subheader {
+			line-height: 32px;
+		}
+	}
+
 	@media (min-width: 1140px) {
 		.titleGrp {
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			margin-bottom: 60px;
+			margin-top: 160px;
 			h1 {
 				flex-grow: 1;
 				flex-basis: 300px;
@@ -230,13 +239,6 @@
 				border-left: solid 1px $color-black;
 				justify-content: center;
 				margin-right: 60px;
-			}
-		}
-	}
-	@media (max-width: 768px) {
-		.titleGrp {
-			.subheader {
-				line-height: 32px;
 			}
 		}
 	}
@@ -304,8 +306,8 @@
 // INDIVIDUAL PORTFOLIO STYLES
 
 .heroImg {
-	margin-top: 80px;
-	height: 300px; /* set the height of the container */
+	margin-top: 100px;
+	height: 600px; /* set the height of the container */
 	@media (max-width: 767px) {
 		height: 150px;
 	}
@@ -338,7 +340,9 @@
 	border-color: $color-blue;
 }
 
-#portfolioIW {
+#portfolioIW,
+#portfolioFW,
+#portfolioDB {
 	.portfolio-container {
 		margin: 0px auto;
 		display: flex;
@@ -347,7 +351,7 @@
 			flex-direction: column;
 		}
 		img {
-			margin: 0px auto 60px;
+			margin: 0px auto 0px;
 		}
 	}
 	.intro {
@@ -357,6 +361,7 @@
 			margin: 30px auto;
 		}
 		justify-content: center;
+		align-items: center;
 		@media (max-width: 767px) {
 			flex-direction: column;
 			gap: inherit;
@@ -378,6 +383,9 @@
 			font-size: 20px;
 			line-height: 38px;
 			max-width: 500px;
+			font-family: Merriweather, serif;
+			font-weight: 300;
+
 			@media (max-width: 769px) {
 				max-width: 100%;
 				font-size: 18px;
@@ -454,7 +462,7 @@
 		border-bottom: solid 20px;
 	}
 }
-// CUSTOM
+// CUSTOM Financial Worksheet
 #portfolioIW {
 	.challenge,
 	.objective {
@@ -465,18 +473,67 @@
 			box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 		}
 	}
-	.designProcess h3 {
-		// border-color: $color-blue;
+	.heroImg {
+		border-bottom: solid 40px $color-bg-blue;
 	}
-	p.listItem strong {
-		font-weight: bold;
-		display: block;
+}
+
+p.listItem strong {
+	font-weight: bold;
+	display: block;
+}
+.userResearch p.listItem strong {
+	color: $color-blue;
+}
+// CUSTOM FINANCIAL Worksheet
+#portfolioFW {
+	.challenge,
+	.objective {
+		background-color: $color-bg-green;
+		border-color: $color-green;
+		h3 {
+			border-color: $color-green;
+			box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+		}
 	}
-	.userResearch p.listItem strong {
-		color: $color-blue;
+	.heroImg {
+		border-bottom: solid 40px $color-bg-green;
+	}
+	.titleGrp h3 {
+		border-color: $color-green;
 	}
 }
 .leftside img {
 	width: 280px;
 	margin: 0px !important;
+}
+
+// CUSTOM DB Widget
+#portfolioDB {
+	.challenge,
+	.objective {
+		background-color: $color-bg-orange;
+		border-color: $color-orange;
+		h3 {
+			border-color: $color-orange;
+			box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+		}
+	}
+	.heroImg {
+		border-bottom: solid 40px $color-bg-orange;
+	}
+	.titleGrp h3 {
+		border-color: $color-orange;
+	}
+	.companyAnnouncementImg,
+	.uploadProgressImg {
+		max-width: 600px;
+	}
+	.pipelineImg {
+		max-width: 800px;
+	}
+	.calendarImg,
+	.taskImg {
+		max-width: 400px;
+	}
 }

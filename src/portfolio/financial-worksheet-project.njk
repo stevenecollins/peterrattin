@@ -1,21 +1,21 @@
 ---
-layout: base.njk
+layout: portfolio-base.njk
 permalink: "portfolio/financial-worksheet-project.html"
 title: Finanical Worksheets Project
 pageId: portfolioFW
 ---
 
-<div class="container">
-	<img src="../assets/DBWidgetCover.png" alt="Dashboard Widgets Case Study" />
+<div class="heroImg">
+	<img src="../assets/fwCover.png" alt="Dashboard Widgets Case Study" />
 </div>
-<div class="container">
+<div class="container portfolio-container intro">
 	<h1>Financial Worksheets Mobile Feature</h1>
 	<h2>
 		AccuLynx’s financial worksheet is an interactive hub for users that displays
 		important financial information for their specific roofing jobs.
 	</h2>
 </div>
-<div class="">
+<div class="container portfolio-container">
 	<div class="challenge">
 		<h3>The Challenge</h3>
 		<p>
@@ -37,10 +37,10 @@ pageId: portfolioFW
 		</p>
 	</div>
 </div>
-<div class="designProcess">
+<div class="container titleGrp">
 	<h3>Design Process</h3>
 </div>
-<div class="container">
+<div class="container portfolio-container processGrp">
 	<h3>Learning and Understanding the Feature</h3>
 	<p>
 		The first thing I do when starting a new project is product discovery. This
@@ -51,13 +51,13 @@ pageId: portfolioFW
 		the flows I made to understand the complex feature.
 	</p>
 </div>
-<div class="container">
+<div class="container portfolio-container">
 	<img
 		src="../assets/fwTaskFlow.png"
 		alt="Financial Worksheet Web Tasks Flow"
 	/>
 </div>
-<div class="container">
+<div class="container portfolio-container processGrp">
 	<h3>Understanding Who This is Made For</h3>
 	<p>
 		AccuLynx’s mobile app has existed for several years, so the personas for
@@ -67,13 +67,13 @@ pageId: portfolioFW
 		a better understanding of both.
 	</p>
 </div>
-<div class="container">
+<div class="container portfolio-container processGrp">
 	<img
 		src="../assets/fwUnderstanding.png"
 		alt="Financial Worksheets: Who is this made for?"
 	/>
 </div>
-<div class="container">
+<div class="container portfolio-container processGrp">
 	<h3>Rapid Sketching</h3>
 	<p>
 		The next step in the process was to quickly sketch out ideas for the
@@ -82,10 +82,10 @@ pageId: portfolioFW
 		ideas that we can then use when designing the screens.
 	</p>
 </div>
-<div class="container">
+<div class="container portfolio-container">
 	<img src="../assets/fwRapidSketching.png" alt="Rapid Sketching" />
 </div>
-<div class="container">
+<div class="container portfolio-container processGrp">
 	<h3>Lo-Fi Designs</h3>
 	<div>
 		<p>
@@ -98,10 +98,10 @@ pageId: portfolioFW
 		</p>
 	</div>
 </div>
-<div class="container">
+<div class="container portfolio-container">
 	<img src="../assets/fwLoFiDesigns.png" alt="Lo-Fi Designs" />
 </div>
-<div class="container">
+<div class="container portfolio-container processGrp">
 	<h3>User Research</h3>
 	<p>
 		My design partner and I conducted six usability tests that gave us insight
@@ -114,128 +114,104 @@ pageId: portfolioFW
 		be found below.
 	</p>
 </div>
-<div class="container">
+<div class="container portfolio-container processGrp">
 	<div class="leftside">
 		<h3>HI-Fi Prototype</h3>
-		<img src="../assets/userResearch.png" alt="User Research" />
+		{# <img src="../assets/userResearch.png" alt="User Research" /> #}
 	</div>
 	<div class="rightside">
-		<div class="listItem">
-			<h6>Scenario 1:</h6>
-			<p>
+		<p class="listItem">
+				<strong>Scenario 1:</strong>
 				Users were asked to explain how they would finalize a job value after
 				completing their estimates for a job.
 			</p>
-		</div>
-		<div class="listItem">
-			<h6>Scenario 2:</h6>
-			<p>
+		<p class="listItem">
+				<strong>Scenario 2:</strong>
 				Users were asked to import several items from a non-primary estimate
 				into the financial worksheet and then save their progress.
 			</p>
-		</div>
-		<div class="listItem">
-			<h6>Scenario 3:</h6>
-			<p>
+		<p class="listItem">
+				<strong>Scenario 3:</strong>
 				Users were asked to add a new child item to the package that they had
 				just imported.
 			</p>
-		</div>
-		<div class="listItem">
-			<h6>Scenario 4:</h6>
-			<p>Users were asked to submit and approve their completed worksheet.</p>
+		<p class="listItem">
+				<strong>Scenario 4:</strong>
+				Users were asked to submit and approve their completed worksheet.
+			</p>
 		</div>
 	</div>
 </div>
 
-<div class="container">
+<div class="container portfolio-container processGrp">
 	<div class="leftside">
 		<h3>Key Findings:</h3>
 	</div>
 	<div class="rightside">
-		<div class="listItem">
-			<p>
+		<p class="listItem">
 				Below is a list of my key findings from the usability tests that my
 				partner and I conducted:
 			</p>
-		</div>
-		<div class="listItem">
-			<p>
-				<b>Key Finding 1:</b>
+		<p class="listItem">
+				<strong>Key Finding 1:</strong>
 				Users were getting lost in the nested items layout and often
 				misunderstood their location in the feature.
 			</p>
-		</div>
-		<div class="listItem">
-			<p>
-				<b>Key Finding 2:</b>
+		<p class="listItem">
+				<strong>Key Finding 2:</strong>
 				It was not clear to users which items were parent items and which were
 				child items.
 			</p>
-		</div>
-		<div class="listItem">
-			<p>
-				<b>Key Finding 3:</b>
+		<p class="listItem">
+				<strong>Key Finding 3:</strong>
 				The users expected that after changes were made to the financial
 				worksheet, the customer would somehow be notified of the changes.
 			</p>
-		</div>
-		<div class="listItem">
-			<p>
-				<b>Key Finding 4:</b>
+		<p class="listItem">
+				<bstrong>Key Finding 4:</strong>
 				Users were confused why both the “submit for approval” and the “approve”
 				buttons were available to them at the same time.
 			</p>
-		</div>
-		<div class="listItem">
-			<p>
-				<b>Key Finding 5:</b>
+		<p class="listItem">
+				<strong>Key Finding 5:</strong>
 				Many of the users expressed their fear that they would lose their
 				progress if they used the back button to return to the previous screen.
 			</p>
-		</div>
 	</div>
 </div>
-<div class="container">
-	<img src="../assets/adobestock1.png" alt="Lo-Fi Designs" />
+<div class="container portfolio-container">
+	<img src="../assets/adobestock1.png" alt="" />
 </div>
-<div class="container">
+<div class="container portfolio-container processGrp">
 	<div class="leftside">
 		<h3>Next Steps and Recommendations</h3>
 	</div>
 	<div class="rightside">
-		<div class="listItem">
-			<p>
+		<p class="listItem">
 				Based on the user research, I created a list of next steps and
 				recommendations that would help better align the designs with what the
 				users were looking for:
 			</p>
-		</div>
-		<div class="listItem">
-			<p>
-				<b>Recommendation 1:</b>
+
+		<p class="listItem">
+				<strong>Recommendation 1:</strong>
 				Rework the nesting of parent and child items on the Financial Worksheets
-				so that users know where they are in the navigation at all times.
-			</p>
-		</div>
-		<div class="listItem">
-			<p>
-				<b>Recommendation 2:</b>
+				so tt users know where they are in the navigation at all times.
+</p>
+		<p class="listItem">
+			<strong>Recommendation 2:</strong>
 				Revisit the design for the “import from estimate” feature to make it
 				more clear which estimate is being viewed and the items that have been
 				selected.
 			</p>
-		</div>
-		<div class="listItem">
-			<p>
-				<b>Recommendation 3:</b>
+		<p class="listItem">
+			<strong>Recommendation 3:</strong>
 				Re-examine the overview page designs so that users quickly know how to
 				add amendments and view their Financial Worksheets.
 			</p>
-		</div>
 	</div>
 </div>
-<div class="container">
+<div class="container portfolio-container processGrp">
 	<h3>Please stay tuned to see the finished product!</h3>
 	<p>
 		We are still in the process of making the necessary changes to our designs
