@@ -251,33 +251,39 @@
 	flex-direction: column;
 	.portfolioItem {
 		display: flex;
+		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		margin: 0px 0px 30px;
 		box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+
 		@media (min-width: 768px) {
+			flex-direction: row;
 			box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
 				rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 			margin: 0px 0px 45px;
 		}
 		.portfolioItemImg {
-			flex: 1 1 0;
-			min-width: 0;
+			width: 100%;
+			@media (min-width: 768px) {
+				width: 62%;
+			}
 		}
 		.portfolioItemText {
 			padding: 30px;
 			@extend %sans-pro-bold;
 			font-size: 24px;
-			@media (min-width: 769px) {
+			text-align: center;
+			width: 100%;
+			@media (min-width: 768px) {
 				padding: 40px;
 				font-size: 32px;
+				width: 38%;
 			}
 			@media (min-width: 1140px) {
 				padding: 60px;
 				font-size: 45px;
 			}
-			width: 32%;
-			text-align: center;
 		}
 	}
 	a {
