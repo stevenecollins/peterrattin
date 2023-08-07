@@ -276,6 +276,8 @@
 				padding: 60px;
 				font-size: 45px;
 			}
+			width: 32%;
+			text-align: center;
 		}
 	}
 	a {
@@ -286,7 +288,10 @@
 		&:focus {
 		}
 	}
-
+	.portfolioItem.pink {
+		background-color: $color-pink-lite;
+		border: solid 4px $color-pink-lite;
+	}
 	.portfolioItem.blue {
 		background-color: $color-bg-blue;
 		border: solid 4px $color-bg-blue;
@@ -340,6 +345,7 @@
 	border-color: $color-blue;
 }
 
+#portfolioCR,
 #portfolioIW,
 #portfolioFW,
 #portfolioDB {
@@ -462,6 +468,34 @@
 		border-bottom: solid 20px;
 	}
 }
+
+// CUSTOM Contacts Redesign
+#portfolioCR {
+	.challenge,
+	.objective {
+		background-color: $color-bg-pink;
+		border-color: $color-purple;
+		h3 {
+			border-color: $color-purple;
+			box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+		}
+	}
+	.heroImg {
+		border-bottom: solid 40px $color-bg-pink;
+	}
+	.titleGrp h3 {
+		border-color: $color-purple;
+	}
+	.img-margin {
+		margin-bottom: 60px;
+		text-align: left;
+	}
+}
+.leftside img {
+	width: 280px;
+	margin: 0px !important;
+}
+
 // CUSTOM Financial Worksheet
 #portfolioIW {
 	.challenge,
